@@ -25,6 +25,7 @@ The goal is to design and implement a star schema in Azure Synapse Analytics for
 - Create an Azure Synapse Workspace
 - Use the Built-In Serverless SQL Pool
 
+![Bike Share ERD](screenshots/Task_1_Create-Azure-Resources.png)
 
 ### Task 2: Design a Star Schema
  
