@@ -1,0 +1,39 @@
+{
+    "name": "ds_EmpMaster_csv",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "LS_ADLS2",
+            "type": "LinkedServiceReference"
+        },
+        "folder": {
+            "name": "ADLG2"
+        },
+        "annotations": [],
+        "type": "DelimitedText",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobFSLocation",
+                "fileName": "EmpMaster.csv",
+                "fileSystem": "dirpayrollfiles"
+            },
+            "columnDelimiter": ",",
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+        },
+        "schema": [
+            {
+                "name": "EmployeeID",
+                "type": "String"
+            },
+            {
+                "name": "LastName",
+                "type": "String"
+            },
+            {
+                "name": "FirstName",
+                "type": "String"
+            }
+        ]
+    }
+}

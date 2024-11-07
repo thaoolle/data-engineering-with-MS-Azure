@@ -1,0 +1,35 @@
+{
+    "name": "ds_AgencyMaster_csv",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "LS_ADLS2",
+            "type": "LinkedServiceReference"
+        },
+        "folder": {
+            "name": "ADLG2"
+        },
+        "annotations": [],
+        "type": "DelimitedText",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobFSLocation",
+                "fileName": "AgencyMaster.csv",
+                "fileSystem": "dirpayrollfiles"
+            },
+            "columnDelimiter": ",",
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+        },
+        "schema": [
+            {
+                "name": "AgencyID",
+                "type": "String"
+            },
+            {
+                "name": "AgencyName",
+                "type": "String"
+            }
+        ]
+    }
+}

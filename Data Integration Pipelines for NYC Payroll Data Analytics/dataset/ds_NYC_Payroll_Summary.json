@@ -1,0 +1,34 @@
+{
+    "name": "ds_NYC_Payroll_Summary",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "LS_AzureSqlDB",
+            "type": "LinkedServiceReference"
+        },
+        "folder": {
+            "name": "SQL DB"
+        },
+        "annotations": [],
+        "type": "AzureSqlTable",
+        "schema": [
+            {
+                "name": "FiscalYear",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "AgencyName",
+                "type": "varchar"
+            },
+            {
+                "name": "TotalPaid",
+                "type": "float",
+                "precision": 15
+            }
+        ],
+        "typeProperties": {
+            "schema": "dbo",
+            "table": "NYC_Payroll_Summary"
+        }
+    }
+}
